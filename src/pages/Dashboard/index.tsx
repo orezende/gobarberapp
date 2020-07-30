@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View } from 'react-native';
 
 import { useAuth } from '../../hooks/auth';
@@ -14,6 +14,7 @@ import {
 
 const Dashboard: React.FC = () => {
   const { signOut, user } = useAuth();
+
   return (
     <Container>
       <Header>
